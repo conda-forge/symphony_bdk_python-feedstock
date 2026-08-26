@@ -27,7 +27,7 @@ requirements:
     - aiohttp >=3.12.14,<4
     - pyyaml >=6.0,<7
     - pyjwt >=2.10.0,<3
-    - cryptography >=46,<47
+    - cryptography >=48.0.1,<49
     - tenacity >=8.0.1,<9
     - defusedxml >=0.7.1,<1
     - docutils ==0.16
@@ -37,7 +37,9 @@ tests:
       imports:
         - symphony.bdk
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/finos/symphony-bdk-python
