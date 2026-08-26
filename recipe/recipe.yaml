@@ -1,5 +1,5 @@
 context:
-  version: "2.11.2"
+  version: "2.11.3"
 
 package:
   name: symphony_bdk_python
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/symphony_bdk_python/symphony_bdk_python-${{ version }}.tar.gz
-  sha256: 667d6635432a6990a419ea24579a50e30069565e5534dc8c79cd7edc19306c52
+  sha256: 5ba8877d57f191d3f987f47b6cef8c347997a1a459ade1504c3ff7fe3892f852
 
 build:
   script: python -m pip install . -vv
