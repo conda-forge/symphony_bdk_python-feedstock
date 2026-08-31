@@ -1,5 +1,5 @@
 context:
-  version: "2.11.3"
+  version: "2.11.4"
 
 package:
   name: symphony_bdk_python
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/symphony_bdk_python/symphony_bdk_python-${{ version }}.tar.gz
-  sha256: 5ba8877d57f191d3f987f47b6cef8c347997a1a459ade1504c3ff7fe3892f852
+  sha256: d8fee47209dca5eeaee908b80050c6e1af380b9dd0f3f5520b913bcb24ab9a69
 
 build:
   script: python -m pip install . -vv
@@ -25,9 +25,10 @@ requirements:
     - python-dateutil >=2.8.2,<3
     - urllib3 >=2.5.0,<3
     - aiohttp >=3.12.14,<4
+    - idna >=3.15
     - pyyaml >=6.0,<7
-    - pyjwt >=2.10.0,<3
-    - cryptography >=48.0.1,<49
+    - pyjwt >=2.13.0,<3
+    - cryptography >=50,<51
     - tenacity >=8.0.1,<9
     - defusedxml >=0.7.1,<1
     - docutils ==0.16
